@@ -1,0 +1,45 @@
+{
+  "name": "eslint-config-guesttoguest",
+  "version": "1.0.0",
+  "description": "GuesttoGuest's ESLint config, following our styleguide",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run --silent lint",
+    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuestToGuestTeam/eslint-config-guesttoguest.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "guesttoguest",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "GuestToGuest <dev@guesttoguest.com> (https://www.guesttoguest.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GuestToGuestTeam/eslint-config-guesttoguest/issues"
+  },
+  "homepage": "https://github.com/GuestToGuestTeam/eslint-config-guesttoguest#readme",
+  "devDependencies": {
+    "eslint": "^4.6.0",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-react": "^7.3.0",
+    "in-publish": "^2.0.0",
+    "safe-publish-latest": "^1.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "^4.6.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-react": "^7.3.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}

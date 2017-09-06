@@ -1,0 +1,14 @@
+{
+  "extends": "./index.js",
+  "rules": {
+    // disable requiring trailing commas because it might be nice to revert to
+    // being JSON at some point, and I don't want to make big changes now.
+    "comma-dangle": 0,
+    "indent": [1, 2],
+    "quote-props": [1, "as-needed", {
+      keywords: false,
+      unnecessary: false,
+      numbers: false
+    }]
+  },
+}
